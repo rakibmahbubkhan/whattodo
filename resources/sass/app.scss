@@ -1,0 +1,35 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// Font Awesome
+@import "node_modules/font-awesome/scss/font-awesome";
+
+body {
+    height: 100%;
+    background-image: url('https://wallpaperaccess.com/full/1524368.jpg');
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.itemText {
+    width: 100%;
+    margin-left: 20px;
+}
+
+.item {
+    display: flex;
+    align-content: center;
+}
+
+.card {
+    margin-top: 10% !important;
+}
