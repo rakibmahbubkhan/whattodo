@@ -13031,7 +13031,7 @@ h3 {
 
 body {
   height: 100%;
-  background-image: url("https://wallpaperaccess.com/full/1524368.jpg");
+  background-color: #060629;
 }
 
 .completed {
@@ -13051,4 +13051,20 @@ body {
 
 .card {
   margin-top: 10% !important;
+}
+
+.inline-item {
+  align-items: center;
+}
+
+@media only screen and (max-width: 540px) {
+  .itemText {
+    font-size: 0.8rem;
+  }
+
+  .btn-outline-danger {
+    position: absolute;
+    right: 3%;
+    top: 18%;
+  }
 }

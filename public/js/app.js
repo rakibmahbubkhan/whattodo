@@ -47880,7 +47880,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "d-flex justify-content-center" }, [
-    _c("form", { staticClass: "d-flex form-inline" }, [
+    _c("form", { staticClass: "d-flex inline-item" }, [
       _c("input", {
         directives: [
           {
@@ -47944,33 +47944,44 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "row" }, [
-    _c("div", { staticClass: "col-md-6 d-block mx-auto" }, [
-      _c("div", { staticClass: "card border-primary justify-content-center" }, [
+    _c(
+      "div",
+      {
+        staticClass: "col-md-6 d-block mx-auto",
+        staticStyle: { padding: "10% 0%" }
+      },
+      [
         _c(
           "div",
-          { staticClass: "card-body" },
+          { staticClass: "card border-primary justify-content-center" },
           [
-            _c("list-view", {
-              attrs: { items: _vm.items },
-              on: {
-                reloadlist: function($event) {
-                  return _vm.getList()
-                }
-              }
-            }),
-            _vm._v(" "),
-            _c("add-item-form", {
-              on: {
-                reloadlist: function($event) {
-                  return _vm.getList()
-                }
-              }
-            })
-          ],
-          1
+            _c(
+              "div",
+              { staticClass: "card-body" },
+              [
+                _c("list-view", {
+                  attrs: { items: _vm.items },
+                  on: {
+                    reloadlist: function($event) {
+                      return _vm.getList()
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _c("add-item-form", {
+                  on: {
+                    reloadlist: function($event) {
+                      return _vm.getList()
+                    }
+                  }
+                })
+              ],
+              1
+            )
+          ]
         )
-      ])
-    ])
+      ]
+    )
   ])
 }
 var staticRenderFns = []

@@ -1,6 +1,6 @@
 <template>
     <div class="d-flex justify-content-center">
-        <form class="d-flex form-inline">
+        <form class="d-flex inline-item">
             <input class="form-control mr-sm-2" type="text" placeholder="Type" v-model="item.name"/>
             <a @click="addItem()" class="btn btn-outline-success my-2 my-sm-0" :class="[item.name ? 'active' : 'disabled']" >
                 <font-awesome-icon icon="plus-square" />
@@ -14,7 +14,7 @@ export default {
     data: function() {
         return {
             item: {
-                name: ""
+                name: "",
             }
         };
     },

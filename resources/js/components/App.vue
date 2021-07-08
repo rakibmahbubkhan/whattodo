@@ -1,6 +1,6 @@
 <template>
     <div class="row">
-        <div class="col-md-6 d-block mx-auto">
+        <div class="col-md-6 d-block mx-auto" style="padding: 10% 0%;">
             <div class="card border-primary justify-content-center">
                 
 
